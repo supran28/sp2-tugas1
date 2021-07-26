@@ -103,7 +103,7 @@
 
 
 
-// sp2 tugas1 jawaban nomor
+// sp2 tugas1 jawaban nomor 1
 function hitungLuasPersegiPanjang(panjang , lebar){
     luas = panjang * lebar
 
