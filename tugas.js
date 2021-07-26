@@ -104,17 +104,37 @@
 
 
 // sp2 tugas1 jawaban nomor 1
-function hitungLuasPersegiPanjang(panjang , lebar){
-    luas = panjang * lebar
+//function hitungLuasPersegiPanjang(panjang , lebar){
+//    luas = panjang * lebar
+//
+//    document.write("panjang: " + panjang + "<br/>")
+//    document.write("lebar: " + lebar + "<br><br/>")
+//    document.write("masukan Luas Persegi Panjang : " + luas )
+//}
+//   panjang = prompt ("panjang")
+//   lebar = prompt ( "lebar")
+//
+//   hitungLuasPersegiPanjang(panjang , lebar)
 
-    document.write("panjang: " + panjang + "<br/>")
-    document.write("lebar: " + lebar + "<br><br/>")
-    document.write("masukan Luas Persegi Panjang : " + luas )
+
+// sp2 tugas1 jawaban nomor 2
+function hitungVolumeDanLuasPermukaanBalok(panjang , lebar , tinggi){
+    volume = panjang * lebar * tinggi
+    luas = 2 *(panjang * lebar) + (panjang * tinggi) + (lebar * tinggi)
+
+    document.write("panjang: " + panjang + "<br>");
+    document.write('tinggi :' + tinggi + '<br>');
+    document.write("lebar: " + lebar + "<br>");
+    document.write("Volume: " + volume + "<br>");
+    document.write("Luas Permukaan Balok: " + luas);
+
+
 }
-   panjang = prompt ("panjang")
-   lebar = prompt ( "lebar")
 
-   hitungLuasPersegiPanjang(panjang , lebar)
+panjang = prompt("panjang");
+lebar = prompt("lebar");
+tinggi =prompt ("tinggi");
 
+hitungVolumeDanLuasPermukaanBalok(panjang , lebar , tinggi)
 
 
