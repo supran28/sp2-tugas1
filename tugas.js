@@ -72,20 +72,31 @@
 //namaFungsi('ini argument');
 
 
-function deretAngka(awal,akhir){
-    for(var y = awal; y < akhir; y++){
-        for (var x = awal; x < akhir; x++){
-            if(x == 9 - (y - 1)){
-                var hasil =x * 2 - 2
-                var hasil2 = hasil * 3
-                document.write(hasil)
-            }else{
-                document.write("_")
-            }
-        }
-        document.write("<br/>")
-    }
- 
- }
- deretAngka(0,10)
+//function deretAngka(awal,akhir){
+//    for(var y = awal; y < akhir; y++){
+//        for (var x = awal; x < akhir; x++){
+//            if(x == 9 - (y - 1)){
+//                var hasil =x * 2 - 2
+//                var hasil2 = hasil * 3
+//                document.write(hasil)
+//            }else{
+//                document.write("_")
+//            }
+//        }
+//        document.write("<br/>")
+//    }
+// 
+// }
+// deretAngka(0,10)
 
+
+for(var y = 1; y < 10; y++){
+    for(var x = 1; x < 10; x++){
+        if(y == x || x==9 - (y - 1) || y == 8 || y == 2 || x == 2 || x == 8){
+            document.write("*")
+        }else{
+            document.write("_")
+        }
+    }
+    document.write("<br/>")
+}   
