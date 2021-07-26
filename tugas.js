@@ -71,7 +71,7 @@
 //// memanggil fungsi
 //namaFungsi('ini argument');
 
-// sp2 tugas1 jawaban nomor 3
+// sp2 tugas1 jawaban nomor 4
 //function deretAngka(awal,akhir){
 //    for(var y = awal; y < akhir; y++){
 //        for (var x = awal; x < akhir; x++){
@@ -89,7 +89,7 @@
 // }
 // deretAngka(0,10)
 
-// sp2 tugas1 jawaban nomor 4
+// sp2 tugas1 jawaban nomor 3
 //for(var y = 1; y < 10; y++){
 //    for(var x = 1; x < 10; x++){
 //        if(y == x || x==9 - (y - 1) || y == 8 || y == 2 || x == 2 || x == 8){
@@ -102,10 +102,19 @@
 //}   
 
 
-var panjang = prompt("masukan nilai panjang");
-var lebar = prompt("masukan nilai lebar");
-panjang = parseInt(panjang);
-lebar = parseInt(lebar);
-var luas;
-luas = panjang * lebar;
-document.write("hasil dari luas persegi panjang adalah =" + luas);
+
+// sp2 tugas1 jawaban nomor
+function hitungLuasPersegiPanjang(panjang , lebar){
+    luas = panjang * lebar
+
+    document.write("panjang: " + panjang + "<br/>")
+    document.write("lebar: " + lebar + "<br><br/>")
+    document.write("masukan Luas Persegi Panjang : " + luas )
+}
+   panjang = prompt ("panjang")
+   lebar = prompt ( "lebar")
+
+   hitungLuasPersegiPanjang(panjang , lebar)
+
+
+
